@@ -8,36 +8,19 @@
 import SwiftUI
 
 struct MenuView: View {
-  var menuItems:[MenuItem] = [
-    MenuItem(name: "Onigiri", price: "1.99", image: Image(.onigiri)),
-    MenuItem(name: "Meguro Sushi", price: "5.99", image: Image(.meguroSushi)),
-    MenuItem(name: "Tako Sushi", price: "4.99", image: Image(.takoSushi)),
-    MenuItem(name: "Avocado Maki", price: "2.99", image: Image(.avocadoMaki)),
-    MenuItem(name: "Tobiko Spicy Maki", price: "4.99", image: Image(.tobikoSpicyMaki)),
-    MenuItem(name: "Salmon Sushi", price: "4.99", image: Image(.salmonSushi)),
-    MenuItem(name: "Hamachi Sushi", price: "6.99", image: Image(.hamachiSushi)),
-    MenuItem(name: "Kani Sushi", price: "3.99", image: Image(.kaniSushi)),
-    MenuItem(name: "Tamago Sushi", price: "3.99", image: Image(.tamagoSushi)),
-    MenuItem(name: "California Roll", price: "3.99", image: Image(.californiaRoll)),
-    MenuItem(name: "Shrimp Sushi", price: "3.99", image: Image(.shrimpSushi)),
-    MenuItem(name: "Ikura Sushi", price: "5.99", image: Image(.ikuraSushi))
-  ]
+  @State var menuItems:[MenuItem] = [MenuItem]()
+  var dataServide = DataService()
   
   var body: some View {
     List(menuItems) { item in
-      HStack {
-        item.image
-          .resizable()
-          .aspectRatio(contentMode: .fit)
-          .frame(width: 60)
-          .clipShape(RoundedRectangle(cornerRadius: 12))
-        Text(item.name)
-        Spacer()
-        
-        Text("$ " + item.price)
-      }
+      
+      MenuListRow(image: item.image, name: item.name, price: item.price)
     }
     .listStyle(.plain)
+    .onAppear(perform: {
+      // Call for the data
+      menuItems = dataServide.getData()
+    })
   }
 }
 
