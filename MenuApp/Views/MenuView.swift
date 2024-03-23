@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MenuView: View {
-  @State var menuItems:[MenuItem] = [MenuItem]()
-  var dataServide = DataService()
+  @State var menuItems:[MenuItemDO] = [MenuItemDO]()
+  var dataServide = MenuItemOO()
   
   var body: some View {
     List(menuItems) { item in

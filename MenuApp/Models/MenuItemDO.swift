@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuItem: Identifiable {
+struct MenuItemDO: Identifiable {
   let id = UUID()
   var name: String
   var price: String // porcausa do $ symbol
