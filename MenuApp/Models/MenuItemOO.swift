@@ -26,4 +26,17 @@ class MenuItemOO {
       MenuItemDO(name: "Ikura Sushi", price: "5.99", image: Image(.ikuraSushi))
     ]
   }
+  
+  func getPhotos() -> [String] {
+    return [
+      "sushi1",
+      "sushi2",
+      "sushi3",
+      "sushi4",
+      "sushi5",
+      "sushi6",
+      "sushi7",
+      "sushi8"
+    ]
+  }
 }

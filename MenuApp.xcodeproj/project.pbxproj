@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B78BCA62BB33FD400ABA5A9 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78BCA52BB33FD400ABA5A9 /* PhotoView.swift */; };
 		1BC732C72BA8C4640038B05B /* MenuAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC732C62BA8C4640038B05B /* MenuAppApp.swift */; };
 		1BC732C92BA8C4640038B05B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC732C82BA8C4640038B05B /* MenuView.swift */; };
 		1BC732CB2BA8C4660038B05B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC732CA2BA8C4660038B05B /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B78BCA52BB33FD400ABA5A9 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		1BC732C32BA8C4640038B05B /* MenuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC732C62BA8C4640038B05B /* MenuAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAppApp.swift; sourceTree = "<group>"; };
 		1BC732C82BA8C4640038B05B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				1BC733222BAE72270038B05B /* AboutView.swift */,
 				1BC733242BAE72360038B05B /* GalleryView.swift */,
 				1BC733262BAE74FB0038B05B /* MainView.swift */,
+				1B78BCA52BB33FD400ABA5A9 /* PhotoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				1BC733252BAE72360038B05B /* GalleryView.swift in Sources */,
 				1BC733272BAE74FB0038B05B /* MainView.swift in Sources */,
 				1BC733012BAB87AD0038B05B /* MenuItemDO.swift in Sources */,
+				1B78BCA62BB33FD400ABA5A9 /* PhotoView.swift in Sources */,
 				1BC732C92BA8C4640038B05B /* MenuView.swift in Sources */,
 				1BC732C72BA8C4640038B05B /* MenuAppApp.swift in Sources */,
 				1BC7331F2BAE6EAC0038B05B /* MenuListRow.swift in Sources */,
