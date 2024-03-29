@@ -94,11 +94,11 @@
 		1BC733212BAE712B0038B05B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1BC733262BAE74FB0038B05B /* MainView.swift */,
 				1BC732C82BA8C4640038B05B /* MenuView.swift */,
 				1BC7331E2BAE6EAC0038B05B /* MenuListRow.swift */,
 				1BC733222BAE72270038B05B /* AboutView.swift */,
 				1BC733242BAE72360038B05B /* GalleryView.swift */,
-				1BC733262BAE74FB0038B05B /* MainView.swift */,
 				1B78BCA52BB33FD400ABA5A9 /* PhotoView.swift */,
 			);
 			path = Views;
